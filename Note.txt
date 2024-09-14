@@ -5,6 +5,7 @@ https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl
 https://github.com/Annie-Huang/fem-blog-with-cms
 
 https://docs.astro.build/en/install-and-setup/
+https://github.com/withastro/prettier-plugin-astro/issues/358
 
 -------------------------------------------------------------------------
 
