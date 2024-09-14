@@ -1,0 +1,51 @@
+Create a blog with a headless CMS // Full 3-hour course // Astro + Wix Studio
+(https://www.youtube.com/watch?v=Thudicbgqtg)
+
+https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl
+https://github.com/Annie-Huang/fem-blog-with-cms
+
+https://docs.astro.build/en/install-and-setup/
+
+-------------------------------------------------------------------------
+
+PS C:\react> npm create astro@latest fem-blog-with-cms
+Need to install the following packages:
+create-astro@4.9.0
+Ok to proceed? (y) y
+
+
+> npx
+> create-astro fem-blog-with-cms
+
+
+ astro   Launch sequence initiated.
+
+      ◼  dir Using fem-blog-with-cms as project directory
+
+  tmpl   How would you like to start your new project?
+         Empty
+
+    ts   Do you plan to write TypeScript?
+         No
+      ◼  No worries! TypeScript is supported in Astro by default,
+         but you are free to continue writing JavaScript instead.
+
+  deps   Install dependencies?
+         Yes
+
+   git   Initialize a new git repository?
+         Yes
+
+      ✔  Project initialized!
+         ■ Template copied
+         ■ Dependencies installed
+         ■ Git initialized
+
+  next   Liftoff confirmed. Explore your project!
+
+         Enter your project directory using cd ./fem-blog-with-cms
+         Run npm run dev to start the dev server. CTRL+C to stop.
+         Add frameworks like react or tailwind using astro add.
+
+         Stuck? Join us at https://astro.build/chat
+PS C:\react>
