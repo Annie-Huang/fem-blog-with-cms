@@ -74,5 +74,8 @@ img {
 }
 
 body {
+  margin: 0;
+  color: var(--clr-body);
   font-family: var(--ff-base);
+  line-height: 1.6;
 }
