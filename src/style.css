@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-VariableFont_slnt,wght.ttf');
+  font-weight: 400 900;
+  font-display: swap;
+}
 :root {
   --clr-neutral-100: hsl(48, 71%, 99%);
   --clr-neutral-200: hsl(237, 20%, 80%);
@@ -22,4 +28,8 @@
   --fs-700: 2rem;
   --fs-800: 2.5rem;
   --fs-900: 3rem;
+}
+
+body {
+  font-family: var(--ff-base);
 }
