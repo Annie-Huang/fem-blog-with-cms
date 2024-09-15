@@ -1,24 +1,32 @@
-<h2 class='visually-hidden'>Featured article</h2>
-<article>
-  <img src='/images/image-web-3-desktop.jpg' alt='' />
-  <h3>The Bright Future of Web 3.0?</h3>
-  <div>
-    <p>
-      We dive into the next evolution of web that claims to put the power of the
-      platforms back into the hands of the people. But is it really fulfilled
-      its promise?
-    </p>
-    <a href='' class='button'>
-      Read more
-      <span class='visually-hidden'>about The Bright Future of Web 3.0?</span>
-    </a>
-  </div>
-</article>
+<div class='feature-article-container'>
+  <h2 class='visually-hidden'>Featured article</h2>
+  <article>
+    <img src='/images/image-web-3-desktop.jpg' alt='' />
+    <h3>The Bright Future of Web 3.0?</h3>
+    <div>
+      <p>
+        We dive into the next evolution of web that claims to put the power of
+        the platforms back into the hands of the people. But is it really
+        fulfilled its promise?
+      </p>
+      <a href='' class='button'>
+        Read more
+        <span class='visually-hidden'>about The Bright Future of Web 3.0?</span>
+      </a>
+    </div>
+  </article>
+</div>
 
 <style>
+  .feature-article-container {
+    container-type: inline-size;
+  }
+
   article {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @container (width > 600px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   img {
