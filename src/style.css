@@ -80,6 +80,13 @@ body {
   line-height: 1.6;
 }
 
+main,
+section,
+header,
+footer {
+  container-type: inline-size;
+}
+
 .base-layout {
   --max-width: 1180px;
   --padding: 1rem;
