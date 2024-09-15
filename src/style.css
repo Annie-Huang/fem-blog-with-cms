@@ -108,6 +108,10 @@ body {
   width: 1px;
 }
 
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
 .button {
   display: inline flex; /* old way to doing it is 'inline-flex' */
   cursor: pointer;

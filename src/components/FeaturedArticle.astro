@@ -3,7 +3,7 @@
   <article>
     <img src='/images/image-web-3-desktop.jpg' alt='' />
     <h3>The Bright Future of Web 3.0?</h3>
-    <div>
+    <div class='flow'>
       <p>
         We dive into the next evolution of web that claims to put the power of
         the platforms back into the hands of the people. But is it really
@@ -24,7 +24,9 @@
 
   article {
     display: grid;
+    gap: 1rem;
     @container (width > 600px) {
+      gap: 2rem;
       grid-template-columns: repeat(2, 1fr);
     }
   }
