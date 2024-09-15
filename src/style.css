@@ -124,6 +124,11 @@ footer {
   width: 1px;
 }
 
+.inverted {
+  background: black;
+  color: white;
+}
+
 .flow > * + * {
   margin-block-start: var(--flow-space, 1em);
 }
