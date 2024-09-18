@@ -109,12 +109,12 @@ footer {
   display: grid;
   gap: 1rem;
 
-  @container (width > 900px) {
+  /*@container (width > 900px) {*/
+  @container (width > calc(3 * 25ch)) {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  > .span-2 {
-    grid-column: span 2;
+    > .span-2 {
+      grid-column: span 2;
+    }
   }
 }
 

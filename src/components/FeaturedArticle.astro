@@ -30,7 +30,8 @@ const { class: className } = Astro.props;
   article {
     display: grid;
     gap: 1rem;
-    @container (width > 600px) {
+    //@container (width > 600px) {
+    @container (width > calc(2 * 25ch)) {
       gap: 2rem;
       grid-template-columns: repeat(2, 1fr);
     }
