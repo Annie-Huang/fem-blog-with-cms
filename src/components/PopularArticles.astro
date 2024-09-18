@@ -32,3 +32,24 @@ const { class: className } = Astro.props;
     </article>
   </li>
 </ul>
+
+<style>
+  article {
+    display: grid;
+    grid-template-columns: 100px auto;
+  }
+
+  ul {
+    counter-reset: article-count;
+  }
+  li {
+    counter-increment: article-count;
+  }
+  h3::before {
+    content: counter(article-count, decimal-leading-zero);
+    display: block;
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-700);
+    color: var(--clr-accent-400);
+  }
+</style>
