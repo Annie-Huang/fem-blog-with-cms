@@ -112,6 +112,10 @@ footer {
   @container (width > 900px) {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  > .span-2 {
+    grid-column: span 2;
+  }
 }
 
 .visually-hidden {

@@ -1,4 +1,9 @@
-<div class='feature-article-container'>
+---
+const { class: className } = Astro.props;
+---
+
+<!--<div class='feature-article-container'>-->
+<div class:list={[className, 'feature-article-container']}>
   <h2 class='visually-hidden'>Featured article</h2>
   <article>
     <img src='/images/image-web-3-desktop.jpg' alt='' />
