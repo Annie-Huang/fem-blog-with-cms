@@ -137,6 +137,10 @@ footer {
   margin-block-start: var(--flow-space, 1em);
 }
 
+.section {
+  margin-block-end: 3rem;
+}
+
 .button {
   display: inline flex; /* old way to doing it is 'inline-flex' */
   cursor: pointer;
