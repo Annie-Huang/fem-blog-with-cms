@@ -56,6 +56,17 @@ h4 {
   text-wrap: balance;
 }
 
+:where(h1, h2, h3, h4) > a {
+  color: currentColor;
+  text-decoration: none;
+
+  /* Very smart way to use --clr-accent-400 so it means different color for PopularArticles and index.astro */
+  &:hover,
+  &:focus-visible {
+    color: var(--clr-accent-400);
+  }
+}
+
 p,
 li {
   text-wrap: pretty;
