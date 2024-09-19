@@ -37,6 +37,20 @@ const { class: className } = Astro.props;
   article {
     display: grid;
     grid-template-columns: 100px auto;
+
+    > div {
+      display: grid;
+      gap: 0.5rem;
+
+      &::before {
+        line-height: 1;
+        content: counter(article-count, decimal-leading-zero);
+        display: block;
+        font-weight: var(--fw-semi-bold);
+        font-size: var(--fs-700);
+        color: var(--clr-accent-400);
+      }
+    }
   }
 
   ul {
@@ -44,12 +58,5 @@ const { class: className } = Astro.props;
   }
   li {
     counter-increment: article-count;
-  }
-  h3::before {
-    content: counter(article-count, decimal-leading-zero);
-    display: block;
-    font-weight: var(--fw-semi-bold);
-    font-size: var(--fs-700);
-    color: var(--clr-accent-400);
   }
 </style>
