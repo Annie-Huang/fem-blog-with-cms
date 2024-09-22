@@ -1,4 +1,5 @@
 <header>
+  <a href='#main-content' class='skip-to-main'>Skip to main content</a>
   <h1 class='visually-hidden'>The W.</h1>
   <a href='/' class='logo'>
     <img src='/images/logo.svg' alt='' />
@@ -38,6 +39,20 @@
     &:hover,
     &:focus-visible {
       color: var(--clr-accent-400);
+    }
+  }
+
+  .skip-to-main {
+    position: absolute;
+    background: var(--clr-accent-400);
+    color: var(--clr-neutral-900);
+    font-weight: var(--fw-bold);
+    padding: 1em 3em;
+
+    &:hover,
+    &:focus-visible {
+      background: var(--clr-neutral-900);
+      color: var(--clr-neutral-100);
     }
   }
 </style>
