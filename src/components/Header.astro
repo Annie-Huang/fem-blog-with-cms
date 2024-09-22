@@ -1,3 +1,16 @@
+<script>
+  const navToggle = document.querySelector("[aria-controls='primary-nav']");
+
+  navToggle.addEventListener('click', () => {
+    const navOpened = navToggle.getAttribute('aria-expanded');
+    console.log(navOpened);
+    navToggle.setAttribute(
+      'aria-expanded',
+      navOpened === 'false' ? 'true' : 'false',
+    );
+  });
+</script>
+
 <header>
   <a href='#main-content' class='skip-to-main'>Skip to main content</a>
   <h1 class='visually-hidden'>The W.</h1>
@@ -49,6 +62,10 @@
   @media (width < 750px) {
     nav {
       display: none;
+    }
+
+    [aria-expanded='true'] + nav {
+      display: block;
     }
   }
 
