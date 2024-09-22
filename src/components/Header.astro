@@ -19,7 +19,9 @@
   </a>
 
   <button aria-controls='primary-nav' aria-expanded='false'>
-    <span>Menu</span>
+    <span class='visually-hidden'>Menu</span>
+    <img class='icon-hamburger' src='/images/icon-menu.svg' alt='' />
+    <img class='icon-close' src='/images/icon-menu-close.svg' alt='' />
   </button>
 
   <nav id='primary-nav'>
@@ -68,11 +70,27 @@
       display: block;
       position: absolute;
       z-index: 10;
-      right: 0;
+      right: 1rem; /* padding value for the screen */
+      padding: 1rem;
+      background: transparent;
+      border: 0;
+
+      .icon-close {
+        display: none;
+      }
     }
 
     nav {
       display: none;
+    }
+
+    [aria-expanded='true'] {
+      .icon-hamburger {
+        display: none;
+      }
+      .icon-close {
+        display: block;
+      }
     }
 
     [aria-expanded='true'] + nav {
