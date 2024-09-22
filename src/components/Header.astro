@@ -66,6 +66,9 @@
   @media (width < 750px) {
     button {
       display: block;
+      position: absolute;
+      z-index: 10;
+      right: 0;
     }
 
     nav {
@@ -74,6 +77,10 @@
 
     [aria-expanded='true'] + nav {
       display: block;
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background-color: var(--clr-neutral-100);
     }
   }
 
